@@ -1,16 +1,7 @@
+
 import java.util.Scanner;
 
 public class PalindromeCheckerApp {
-
-    public static boolean isPalindrome(String text) {
-        String reversed = "";
-
-        for (int i = text.length() - 1; i >= 0; i--) {
-            reversed += text.charAt(i);
-        }
-
-        return text.equalsIgnoreCase(reversed);
-    }
 
     public static void main(String[] args) {
 
@@ -19,9 +10,18 @@ public class PalindromeCheckerApp {
         System.out.print("Input text: ");
         String input = sc.nextLine();
 
-        boolean result = isPalindrome(input);
+        String reversed = "";
 
-        System.out.println("Is it a Palindrome? : " + result);
+        // Iterate from last character to first
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed += input.charAt(i);
+        }
+
+        if (input.equalsIgnoreCase(reversed)) {
+            System.out.println("Is it a Palindrome? : true");
+        } else {
+            System.out.println("Is it a Palindrome? : false");
+        }
 
         sc.close();
     }
