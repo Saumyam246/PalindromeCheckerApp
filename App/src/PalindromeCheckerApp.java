@@ -1,27 +1,39 @@
 
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+public class radarPalindromeCheckerApp {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Input text: ");
+        System.out.print("Input : ");
         String input = sc.nextLine();
 
-        String reversed = "";
+        char[] chars = input.toCharArray();
 
-        // Iterate from last character to first
-        for (int i = input.length() - 1; i >= 0; i--) {
-            reversed += input.charAt(i);
+        // Initialize pointer at the beginning
+        int start = 0;
+
+        // Initialize pointer at the end
+        int end = chars.length - 1;
+
+        // Assume palindrome initially
+        boolean isPalindrome = true;
+
+        // Continue comparison until pointers cross
+        while (start < end) {
+
+            if (chars[start] != chars[end]) {
+                isPalindrome = false;
+                break;
+            }
+
+            start++;
+            end--;
         }
 
-        if (input.equalsIgnoreCase(reversed)) {
-            System.out.println("Is it a Palindrome? : true");
-        } else {
-            System.out.println("Is it a Palindrome? : false");
-        }
+        System.out.println("Is Palindrome? : " + isPalindrome);
 
         sc.close();
     }
