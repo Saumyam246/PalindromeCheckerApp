@@ -19,8 +19,8 @@ public class radarPalindromeCheckerApp {
         // Assume palindrome initially
         boolean isPalindrome = true;
 
-        // Continue comparison until pointers cross
-        while (start < end) {
+        System.out.print("civic" );
+        String input = sc.nextLine();
 
             if (chars[start] != chars[end]) {
                 isPalindrome = false;
