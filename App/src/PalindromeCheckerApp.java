@@ -19,7 +19,7 @@ public class radarPalindromeCheckerApp {
         // Assume palindrome initially
         boolean isPalindrome = true;
 
-        System.out.print("madam ");
+        System.out.print("a man a plan a canal panama");
         String input = sc.nextLine();
 
             if (chars[start] != chars[end]) {
