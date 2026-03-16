@@ -19,7 +19,7 @@ public class radarPalindromeCheckerApp {
         // Assume palindrome initially
         boolean isPalindrome = true;
 
-        System.out.print("level ");
+        System.out.print("madam ");
         String input = sc.nextLine();
 
             if (chars[start] != chars[end]) {
