@@ -16,7 +16,7 @@ public class PalindromeCheckerApp {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Input text: ");
+        System.out.print("refer ");
         String input = sc.nextLine();
 
         boolean result = isPalindrome(input);
