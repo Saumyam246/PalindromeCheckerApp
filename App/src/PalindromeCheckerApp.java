@@ -16,7 +16,7 @@ public class PalindromeCheckerApp {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("a man a plan a canal panama");
+        System.out.print("racecar");
         String input = sc.nextLine();
 
         boolean result = isPalindrome(input);
