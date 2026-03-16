@@ -4,10 +4,8 @@ import java.util.Scanner;
 public class radarPalindromeCheckerApp {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Input : ");
+        System.out.print("noon ");
         String input = sc.nextLine();
 
         char[] chars = input.toCharArray();
